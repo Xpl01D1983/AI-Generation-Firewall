@@ -524,4 +524,7 @@ If you find this project useful, please consider giving it a star! ⭐
 
 **Remember: With great power comes great responsibility. Use ethically and legally.**
 
+![McgX770](https://github.com/user-attachments/assets/218674c3-8fd3-4724-97ab-6e8494dcb19c)
+
+
 🛡️ **AI Generation Firewall - Protecting the AI Infrastructure** 🛡️
