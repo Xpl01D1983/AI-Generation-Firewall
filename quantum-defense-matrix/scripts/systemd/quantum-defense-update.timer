@@ -1,0 +1,11 @@
+[Unit]
+Description=Quantum Defense Matrix Feed Update Timer
+Requires=quantum-defense-update.service
+
+[Timer]
+OnCalendar=daily
+RandomizedDelaySec=1800
+Persistent=true
+
+[Install]
+WantedBy=timers.target

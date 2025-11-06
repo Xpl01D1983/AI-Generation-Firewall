@@ -1,0 +1,35 @@
+defense_mode: QUANTUM_REAL_TIME
+ai_intelligence: ADAPTIVE_NEURAL
+
+datastore:
+  path: ./data/quantum_intel.db
+
+modules:
+  firewall:
+    enabled: true
+    adapter: iptables
+    block_ports: [4444, 5555, 6666, 1337]
+    drop_score_threshold: 70
+  tripwire:
+    enabled: true
+    paths:
+      - ./testdata
+    scan_interval_seconds: 60
+  honeypot:
+    enabled: true
+    listeners:
+      - port: 2222
+        handler: ssh
+      - port: 8080
+        handler: http
+  threat_intel:
+    urls:
+      - https://raw.githubusercontent.com/stamparm/ipsum/master/ipsum.txt
+      - https://rules.emergingthreats.net/blockrules/compromised-ips.txt
+    update_interval_seconds: 3600
+  auto_update:
+    enabled: true
+    interval_seconds: 86400
+  monitoring:
+    enabled: true
+    poll_interval_seconds: 30
