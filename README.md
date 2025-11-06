@@ -20,3 +20,7 @@ The Weather Agent template showcases how to:
 ## Environment Variables
 
 - `OPENAI_API_KEY`: Your OpenAI API key. [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+
+  ![McgX770](https://github.com/user-attachments/assets/28627534-fa6c-444e-8ad6-e506912a858d)
+
+
