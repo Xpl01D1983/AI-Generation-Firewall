@@ -1,0 +1,17 @@
+[Unit]
+Description=Quantum Defense Matrix
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/quantum-defense/bin/quantum-defense run --config /etc/quantum-defense/config.yml
+Restart=always
+RestartSec=5
+User=root
+Group=root
+WorkingDirectory=/opt/quantum-defense
+Environment=PYTHONUNBUFFERED=1
+ReadWritePaths=/var/lib/quantum-defense
+
+[Install]
+WantedBy=multi-user.target

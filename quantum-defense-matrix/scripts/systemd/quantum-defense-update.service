@@ -1,0 +1,11 @@
+[Unit]
+Description=Quantum Defense Matrix Feed Update
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/quantum-defense/bin/quantum-defense update-feeds --config /etc/quantum-defense/config.yml
+User=root
+Group=root
+WorkingDirectory=/opt/quantum-defense
