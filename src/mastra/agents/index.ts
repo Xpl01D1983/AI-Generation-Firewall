@@ -2,8 +2,9 @@ import { openai } from '@ai-sdk/openai';
 import { Agent } from '@mastra/core/agent';
 import { weatherTool } from '../tools';
 
-// Export AI-W0rM agent
+// Export AI-W0rM agents
 export { aiW0rmAgent } from './ai-w0rm-agent';
+export { aiW0rmCyborgG7 } from './ai-w0rm-cyborg-g7';
 
 export const weatherAgent = new Agent({
   name: 'Weather Agent',

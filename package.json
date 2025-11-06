@@ -1,17 +1,34 @@
 {
-  "name": "weather-agent",
-  "version": "1.0.0",
+  "name": "ai-generation-firewall",
+  "version": "1.1.0",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "mastra dev"
+    "dev": "mastra dev",
+    "build": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "security",
+    "ai",
+    "vulnerability-scanner",
+    "ray",
+    "rce",
+    "penetration-testing",
+    "cybersecurity",
+    "ai-w0rm",
+    "cyborg-g7"
+  ],
+  "author": "AI Generation Firewall Contributors",
   "license": "Apache-2.0",
-  "description": "One Agent, one Workflow and one Tool to bring you the weather in your city.",
+  "description": "AI Generation Firewall with AI-W0RM Cyborg G7 - Advanced security testing framework for AI/ML infrastructure vulnerabilities",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xpl01D1983/AI-Generation-Firewall"
+  },
   "dependencies": {
     "@ai-sdk/openai": "^1.3.24",
     "@mastra/core": "latest",

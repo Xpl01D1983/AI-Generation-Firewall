@@ -188,3 +188,4 @@ const weatherWorkflow = createWorkflow({
 weatherWorkflow.commit();
 
 export { weatherWorkflow };
+export { securityScanWorkflow } from './security-scan-workflow';
